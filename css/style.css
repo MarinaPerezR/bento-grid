@@ -6,6 +6,8 @@
   --yellow-500: hsl(39, 100%, 71%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 7%);
+  --gray: hsl(300, 9%, 93%);
+  --main-gray: hsl(0, 0%, 96%);
 
   /* Font */
   --main-font: "DM Sans", sans-serif;
@@ -28,29 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-}
-
-/* Grid area setting */
-.card-1 {
-  grid-area: one;
-}
-.card-2 {
-  grid-area: two;
-}
-.card-3 {
-  grid-area: three;
-}
-.card-4 {
-  grid-area: four;
-}
-.card-5 {
-  grid-area: five;
-}
-.card-6 {
-  grid-area: six;
-}
-.card-7 {
-  grid-area: seven;
+  background-color: var(--main-gray);
 }
 
 .container {
@@ -65,5 +45,44 @@ body {
     "four"
     "five"
     "six"
-    "seven";
+    "seven"
+    "eight";
+}
+
+.section {
+  border-radius: 20px;
+}
+
+.card-1 {
+  grid-area: one;
+  background-color: var(--purple-500);
+}
+.card-2 {
+  grid-area: two;
+  background-color: var(--gray);
+}
+.card-3 {
+  grid-area: three;
+  background-color: var(--yellow-500);
+}
+.card-4 {
+  grid-area: four;
+  background-color: var(--purple-100);
+}
+.card-5 {
+  grid-area: five;
+  background-color: var(--purple-500);
+}
+.card-6 {
+  grid-area: six;
+  background-color: var(--white);
+}
+.card-7 {
+  grid-area: seven;
+  background-color: var(--yellow-100);
+}
+
+.card-8 {
+  grid-area: eight;
+  background-color: var(--yellow-500);
 }
