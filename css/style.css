@@ -14,3 +14,56 @@
   --w-400: 400;
   --w-500: 500;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Grid area setting */
+.card-1 {
+  grid-area: one;
+}
+.card-2 {
+  grid-area: two;
+}
+.card-3 {
+  grid-area: three;
+}
+.card-4 {
+  grid-area: four;
+}
+.card-5 {
+  grid-area: five;
+}
+.card-6 {
+  grid-area: six;
+}
+.card-7 {
+  grid-area: seven;
+}
+
+.container {
+  display: grid;
+  gap: 25px;
+  padding-block: 32px;
+  margin-inline: auto;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven";
+}
