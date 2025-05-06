@@ -13,6 +13,7 @@
   --main-font: "DM Sans", sans-serif;
 
   /* Font Weights */
+  --w-200: 200;
   --w-400: 400;
   --w-500: 500;
 }
@@ -31,6 +32,7 @@ body {
   align-items: center;
   margin: 0;
   background-color: var(--main-gray);
+  line-height: 0.9;
 }
 
 .container {
@@ -49,40 +51,159 @@ body {
     "eight";
 }
 
-.section {
-  border-radius: 20px;
+section {
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
+section h1 {
+  font-weight: var(--w-500)
+}
+
+section h2 {
+  font-size: 28px;
+  font-weight: var(--w-500);
+}
+
+section h3 {
+  font-size: 23px;
+  font-weight: var(--w-500)
+}
+
+section p {
+  font-size: 18px;
+}
+
+/* Card 1 */
 .card-1 {
   grid-area: one;
   background-color: var(--purple-500);
+  padding: 30px;
+  text-align: center;
+  font-size: 29px;
+  color: var(--white);
 }
+
+.card-1 .yellow-text {
+  color: var(--yellow-500);
+}
+
+.card-1 img {
+  max-width: 75%;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.card-1 p {
+  opacity: 0.7;
+}
+
+/* Card 2 */
 .card-2 {
   grid-area: two;
   background-color: var(--gray);
+  padding: 15px;
 }
+
+.card-2 img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Card 3 */
 .card-3 {
   grid-area: three;
   background-color: var(--yellow-500);
+  padding: 15px 15px 0 15px;
 }
+
+.card-3 img {
+  max-width: 70%;
+  margin-top: 15px;
+}
+
+/* Card 4 */
 .card-4 {
   grid-area: four;
   background-color: var(--purple-100);
+  padding: 30px 15px;
+  text-align: center;
 }
+
+.card-4 img {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-4 p {
+  opacity: 0.7;
+}
+
+/* Card 5 */
 .card-5 {
   grid-area: five;
   background-color: var(--purple-500);
+  text-align: center;
+  padding: 20px 55px;
 }
+
+.card-5 img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.card-5 h2 {
+  color: var(--white);
+}
+
+/* Card 6 */
 .card-6 {
   grid-area: six;
   background-color: var(--white);
+  padding: 25px;
 }
+
+.card-6 h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card-6 img {
+  max-width: 65%;
+  margin-top: 15px;
+}
+
+.card-6 p {
+  opacity: 0.7;
+}
+
+/* Card 7 */
 .card-7 {
   grid-area: seven;
   background-color: var(--yellow-100);
+  padding: 25px;
 }
 
+.card-7 em {
+  color: var(--purple-500);
+}
+
+.card-7 img {
+  max-width: 60%;
+  margin-top: 20px;
+}
+
+/* Card 8 */
 .card-8 {
   grid-area: eight;
   background-color: var(--yellow-500);
+  padding: 20px;
+}
+
+.card-8 img {
+  max-width: 75%;
+  margin-top: 20px;
 }
