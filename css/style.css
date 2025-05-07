@@ -217,3 +217,26 @@ footer {
 footer a {
   color: var(--purple-500);
 }
+
+/* Media query */
+@media (min-width: 768px) {
+  .container {
+    gap: 20px;
+    grid-template-areas:
+      "seven one one four"
+      "seven one one four"
+      "seven two three four"
+      "eight two three four"
+      "eight six five five"
+      "eight six five five";
+    margin: 0 auto;
+    padding: 100px 300px;
+  }
+
+  section {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+}
