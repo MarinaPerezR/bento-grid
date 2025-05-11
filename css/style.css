@@ -219,7 +219,7 @@ footer a {
 }
 
 /* Media query */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .container {
     gap: 20px;
     grid-template-areas:
@@ -236,7 +236,7 @@ footer a {
   section {
     border-radius: 10px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 
